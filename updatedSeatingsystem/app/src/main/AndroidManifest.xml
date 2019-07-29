@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.updatedseatingsystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Edit_employee"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Fill_emp_details"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".Add_Project"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Add_Manager"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Edit_Project"
+            android:label="@string/title_activity_edit__project"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditManagers"
+            android:label="@string/title_activity_edit_managers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Edit_Manager"
+            android:label="@string/title_activity_edit__manager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View_Employees" />
+        <activity android:name=".Edit_project" />
+        <activity android:name=".Edit_manager" />
+        <activity android:name=".Admin" />
+        <activity
+            android:name=".menu"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view_employees" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
