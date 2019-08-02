@@ -6,27 +6,27 @@
     android:layout_height="match_parent"
     android:background="#eeeeee"
     android:orientation="vertical"
-    tools:context=".Admin">
+    tools:context=".Admin.Admin">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="525dp"
+        android:layout_height="479dp"
         android:layout_marginBottom="390dp"
-        android:background="@drawable/backup"
+        android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.934" />
 
     <LinearLayout
         android:id="@+id/Edit_Manager_btn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="20dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/button"
@@ -49,6 +49,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
             android:gravity="center"
             android:text="Manager"
             android:textColor="#747474"
@@ -58,10 +59,10 @@
 
     <LinearLayout
         android:id="@+id/Edit_project_btn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/button"
         android:gravity="center"
@@ -83,6 +84,7 @@
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
             android:gravity="center"
             android:text="Project"
             android:textColor="#747474"
@@ -92,9 +94,9 @@
 
     <LinearLayout
         android:id="@+id/Edit_view_employee_btn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="20dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/button"
@@ -103,7 +105,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Edit_Manager_btn"
-        app:layout_constraintVertical_bias="0.31">
+        app:layout_constraintVertical_bias="0.09">
 
         <ImageView
             android:id="@+id/imageView7"
@@ -117,6 +119,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
             android:gravity="center"
             android:text="View"
             android:textColor="#747474"
@@ -126,10 +129,10 @@
 
     <LinearLayout
         android:id="@+id/logout"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/button"
         android:gravity="center"
@@ -137,7 +140,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Edit_project_btn"
-        app:layout_constraintVertical_bias="0.31">
+        app:layout_constraintVertical_bias="0.09">
 
         <ImageView
             android:id="@+id/imageView8"
@@ -151,6 +154,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
             android:gravity="center"
             android:text="Logout"
             android:textColor="#747474"
@@ -161,6 +165,7 @@
 
     <TextView
         android:id="@+id/welcome"
+        android:fontFamily="@font/raleway"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:layout_marginStart="8dp"
@@ -168,7 +173,7 @@
         android:layout_marginEnd="8dp"
         android:text="Welcome Back"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

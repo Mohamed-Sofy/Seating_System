@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/M_name_managers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Manager Name"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/M_id_managers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/id"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="ID"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/M_job_managers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/job"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Job Title"
+                android:layout_marginTop="8dp"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

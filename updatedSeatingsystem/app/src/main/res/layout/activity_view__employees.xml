@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFEFEF"
-    tools:context=".View_Employees">
+    android:background="#eeeeee"
+    tools:context=".Admin.View_Employees">
 
     <LinearLayout
         android:id="@+id/l1"
@@ -13,13 +13,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
+        android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Spinner
             android:id="@+id/sp_filter"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="50dp"
             android:textSize="25dp"
             android:textStyle="bold"
@@ -31,7 +33,8 @@
 
         <Spinner
             android:id="@+id/sp_manager_project"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="50dp"
             android:textSize="35sp"
             android:textStyle="bold"

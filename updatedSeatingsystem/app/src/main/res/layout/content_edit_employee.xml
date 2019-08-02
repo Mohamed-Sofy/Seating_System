@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Edit_employee"
+    tools:context=".Manager.Edit_employee"
     tools:showIn="@layout/activity_edit_employee">
+    <ImageView
+        android:id="@+id/connection_employee"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_internet_connection"
+        android:layout_centerInParent="true"/>
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:id="@+id/shimmerLayout_employee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_animation_duration="1200">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/manager_item_placeholder" />
+
+            <include layout="@layout/manager_item_placeholder" />
+
+            <include layout="@layout/manager_item_placeholder" />
+
+            <include layout="@layout/manager_item_placeholder" />
+
+            <include layout="@layout/manager_item_placeholder" />
+
+            <include layout="@layout/manager_item_placeholder" />
+
+            <include layout="@layout/manager_item_placeholder" />
+            <include layout="@layout/manager_item_placeholder" />
+        </LinearLayout>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/employee"
+        android:id="@+id/employees_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

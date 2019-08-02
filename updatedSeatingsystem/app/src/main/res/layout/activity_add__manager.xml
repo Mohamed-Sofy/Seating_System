@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_Manager">
-
-
+    android:background="#eeeeee"
+    tools:context=".Admin.Add_Manager">
 
 
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -33,9 +32,10 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="2sp"
                 android:layout_marginBottom="20sp"
+                android:fontFamily="@font/raleway"
                 android:gravity="center"
                 android:text="Manager Information"
-                android:textColor="#432D6B"
+                android:textColor="@color/mainDark"
                 android:textSize="25dp"
                 android:textStyle="bold"
 
@@ -43,7 +43,7 @@
 
 
             <EditText
-                android:id="@+id/e_name"
+                android:id="@+id/e_name_add_manager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -54,6 +54,7 @@
                 android:drawableLeft="@drawable/name"
                 android:drawablePadding="10dp"
                 android:ems="10"
+                android:fontFamily="@font/raleway"
                 android:hint="Manager Name"
                 android:inputType="textPersonName"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +64,7 @@
                 tools:ignore="MissingConstraints" />
 
             <EditText
-                android:id="@+id/e_id"
+                android:id="@+id/e_id_add_manager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -75,6 +76,7 @@
                 android:drawableLeft="@drawable/id"
                 android:drawablePadding="10dp"
                 android:ems="10"
+                android:fontFamily="@font/raleway"
                 android:hint="ID"
                 android:inputType="phone"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +86,7 @@
                 tools:ignore="MissingConstraints" />
 
             <EditText
-                android:id="@+id/e_phone"
+                android:id="@+id/e_phone_add_manager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -96,6 +98,7 @@
                 android:drawableLeft="@drawable/phone"
                 android:drawablePadding="10dp"
                 android:ems="10"
+                android:fontFamily="@font/raleway"
                 android:hint="Phone"
                 android:inputType="phone"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -105,7 +108,7 @@
                 tools:ignore="MissingConstraints" />
 
             <Spinner
-                android:id="@+id/username"
+                android:id="@+id/jobs_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="40sp"
                 android:layout_gravity="center"
@@ -114,8 +117,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="8dp"
-                android:drawableLeft="@drawable/job"
-                android:drawablePadding="10dp"
+                android:background="@drawable/spinner_background"
                 android:ems="10"
                 android:hint="Job Title"
                 android:inputType="textPersonName"
@@ -126,7 +128,7 @@
                 tools:ignore="MissingConstraints" />
 
             <EditText
-                android:id="@+id/user_name"
+                android:id="@+id/user_name_add_manager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -138,6 +140,7 @@
                 android:drawableLeft="@drawable/name"
                 android:drawablePadding="10dp"
                 android:ems="10"
+                android:fontFamily="@font/raleway"
                 android:hint="Username"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -147,7 +150,7 @@
                 tools:ignore="MissingConstraints" />
 
             <EditText
-                android:id="@+id/pass"
+                android:id="@+id/pass_add_manager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -159,6 +162,7 @@
                 android:drawableLeft="@drawable/lock"
                 android:drawablePadding="10dp"
                 android:ems="10"
+                android:fontFamily="@font/raleway"
                 android:hint="Password"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -168,40 +172,45 @@
                 tools:ignore="MissingConstraints" />
 
 
-
         </LinearLayout>
 
     </ScrollView>
 
 
-
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_marginTop="500dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/buttom"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="512dp" />
+        android:layout_width="514dp"
+        android:layout_height="458dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
 
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="180dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="40dp"
-            android:background="@drawable/button"
-            android:gravity="center"
-            android:text="Ok"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/add_manager_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/mainGreen"
+        android:fontFamily="@font/raleway"
+        android:gravity="center"
+        android:text="Ok"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

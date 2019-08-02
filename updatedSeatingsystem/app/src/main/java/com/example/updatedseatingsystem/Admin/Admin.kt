@@ -1,9 +1,11 @@
-package com.example.updatedseatingsystem
+package com.example.updatedseatingsystem.Admin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.example.updatedseatingsystem.*
+import com.example.updatedseatingsystem.Manager.Manager
+import com.example.updatedseatingsystem.storage.SharedPrefManager
 import kotlinx.android.synthetic.main.activity_admin.*
 
 class Admin : AppCompatActivity() {
@@ -29,8 +31,11 @@ class Admin : AppCompatActivity() {
         }
 
         logout.setOnClickListener {
-            val `in` = Intent(applicationContext, MainActivity::class.java)
-            startActivity(`in`)
+            SharedPrefManager.getInstance(applicationContext).clear()
+            var intent = Intent(applicationContext, MainActivity::class.java).apply {
+                setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+            startActivity(intent)
         }
 
     }

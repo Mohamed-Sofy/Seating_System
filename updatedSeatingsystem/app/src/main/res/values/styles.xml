@@ -16,5 +16,15 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/dialog_image</item>
+    </style>
+
+
+    <style name="splashScreen" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+
+    </style>
 
 </resources>
